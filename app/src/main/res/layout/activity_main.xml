@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context=".MainActivity"
+    >
+
+    <View
+        android:id="@+id/topleftView"
+        android:layout_width="250dp"
+        android:layout_height="170dp"
+        android:background="#CC0000"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"/>
+
+    <View
+        android:id="@+id/leftbottomView"
+        android:layout_width="250dp"
+        android:layout_height="333dp"
+        android:layout_below="@id/topleftView"
+        android:background="#0033CC"
+        android:layout_marginRight="10dp" />
+
+    <View
+        android:id="@+id/toprightView"
+        android:layout_width="130dp"
+        android:layout_height="170dp"
+        android:background="#FFFFFF"
+        android:layout_toRightOf="@id/topleftView"
+        android:layout_marginBottom="15dp"/>
+
+    <View
+        android:id="@+id/rightmiddleView"
+        android:layout_width="130dp"
+        android:layout_height="140dp"
+        android:background="#6600CC"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/toprightView"
+        android:layout_toRightOf="@id/leftbottomView"/>
+
+    <View
+        android:id="@+id/rightbottomView"
+        android:layout_width="130dp"
+        android:layout_height="225dp"
+        android:background="#0066FF"
+        android:layout_below="@id/rightmiddleView"
+        android:layout_toRightOf="@id/leftbottomView"
+        android:layout_alignParentBottom="true" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:max="100"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>
